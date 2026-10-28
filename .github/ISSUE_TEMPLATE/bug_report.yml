@@ -1,0 +1,107 @@
+name: 버그 신고 / Bug report
+description: QueryBase에서 잘못 동작하는 부분을 알려 주세요. / Tell us what QueryBase does wrong.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        비밀번호, 연결 문자열, 호스트 이름, 키, 실제 데이터는 절대 넣지 마세요. 로그를 붙일 때도 먼저 지워 주세요.
+        Never include passwords, connection strings, host names, keys or real data, including in logs.
+  - type: input
+    id: version
+    attributes:
+      label: QueryBase 버전 / QueryBase version
+      description: "창 아래 상태 표시줄의 오른쪽 끝이나 설정 → 일반 → QueryBase 정보에 표시되는 버전 / The version at the right end of the status bar, or under Settings → General → About QueryBase"
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: 운영체제 / Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: 운영체제 버전 / OS version
+      placeholder: "macOS 15.1, Windows 11 24H2, Ubuntu 24.04"
+    validations:
+      required: true
+  - type: dropdown
+    id: cpu
+    attributes:
+      label: CPU
+      options:
+        - x64
+        - arm64
+        - 모름 / Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: 데이터베이스 엔진 / Database engine
+      options:
+        - SQLite
+        - PostgreSQL
+        - MySQL
+        - MariaDB
+        - Oracle
+        - SQL Server
+        - 해당 없음 / Not applicable
+    validations:
+      required: true
+  - type: input
+    id: engine_version
+    attributes:
+      label: 엔진 버전 / Engine version
+      placeholder: "PostgreSQL 17.2"
+  - type: dropdown
+    id: connection
+    attributes:
+      label: 연결 방식 / Connection
+      options:
+        - 직접 / Direct
+        - SSH 터널 / SSH tunnel
+        - 해당 없음 / Not applicable
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 절차 / Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작 / Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 동작 / Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 로그 / Logs
+      description: "도움말 → 로그 폴더 열기 / Help → Open Logs Folder. 비밀 정보를 지운 뒤 붙여 주세요. / Remove secrets first."
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 비밀 정보 확인 / No secrets
+      options:
+        - label: "비밀번호·연결 문자열·호스트 이름·키·실제 데이터를 넣지 않았습니다 / I included no passwords, connection strings, host names, keys or real data."
+          required: true

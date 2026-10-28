@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 보안 문제 신고 / Security report
+    url: "https://github.com/paldyn/querybase-releases#보안-문제-신고"
+    about: 보안 문제는 공개 Issue로 올리지 마세요. / Do not report security problems in public issues.
