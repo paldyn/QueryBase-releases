@@ -1,6 +1,6 @@
 # QueryBase
 
-macOS·Windows·Linux용 데스크톱 데이터베이스 클라이언트입니다. 이 저장소에는 소스 코드가 없고, 설치 파일과 릴리스 노트만 [Releases](https://github.com/paldyn/QueryBase-releases/releases)로 배포합니다.
+macOS·Windows용 데스크톱 데이터베이스 클라이언트입니다. Linux용은 다음 버전부터 제공합니다. 이 저장소에는 소스 코드가 없고, 설치 파일과 릴리스 노트만 [Releases](https://github.com/paldyn/QueryBase-releases/releases)로 배포합니다.
 
 [English](#english)
 
@@ -8,26 +8,22 @@ macOS·Windows·Linux용 데스크톱 데이터베이스 클라이언트입니�
 
 아래 링크로 항상 최신 버전을 받을 수 있습니다.
 
-| 플랫폼              | 파일                                                                                                                              |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| macOS Apple silicon | [QueryBase-mac-arm64.dmg](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-mac-arm64.dmg)                 |
-| macOS Intel         | [QueryBase-mac-x64.dmg](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-mac-x64.dmg)                     |
-| Windows x64         | [QueryBase-win-x64.exe](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-win-x64.exe)                     |
-| Windows arm64       | [QueryBase-win-arm64.exe](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-win-arm64.exe)                 |
-| Linux x64           | [QueryBase-linux-x86_64.AppImage](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-linux-x86_64.AppImage) |
-| Linux arm64         | [QueryBase-linux-arm64.AppImage](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-linux-arm64.AppImage)   |
+| 플랫폼              | 파일                                                                                                              |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| macOS Apple silicon | [QueryBase-mac-arm64.dmg](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-mac-arm64.dmg) |
+| macOS Intel         | [QueryBase-mac-x64.dmg](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-mac-x64.dmg)     |
+| Windows x64         | [QueryBase-win-x64.exe](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-win-x64.exe)     |
+| Windows arm64       | [QueryBase-win-arm64.exe](https://github.com/paldyn/QueryBase-releases/releases/latest/download/QueryBase-win-arm64.exe) |
 
 이전 버전과 버전별 릴리스 노트는 [Releases](https://github.com/paldyn/QueryBase-releases/releases)에 있습니다.
 
 - macOS: DMG를 열고 QueryBase를 응용 프로그램 폴더로 끌어다 놓습니다.
 - Windows: 설치 프로그램에서 현재 사용자 또는 모든 사용자 설치와 설치 폴더를 고릅니다. 설치 파일은 Authenticode 코드 서명을 하지 않으므로, 처음 실행하면 Microsoft Defender SmartScreen이 **Windows의 PC 보호** 창을 띄웁니다. **추가 정보 → 실행**을 누르면 설치가 시작됩니다. 모든 사용자 설치를 고르면 사용자 계정 컨트롤 창에 게시자가 알 수 없음으로 표시됩니다. Smart App Control을 켠 Windows 11에서는 이 선택지 없이 막힐 수 있습니다.
-- Linux: 실행 권한을 주고(`chmod +x`) 실행합니다.
 
 ## 시스템 요구 사항
 
 - macOS 13 이상(Apple silicon, Intel)
 - Windows 10 이상(x64, arm64)
-- Linux x64, arm64. AppImage는 정적 런타임을 써서 `libfuse2`가 필요 없습니다. FUSE를 쓸 수 없으면 `APPIMAGE_EXTRACT_AND_RUN=1`로 실행합니다.
 - 데이터베이스 연결에는 별도 클라이언트가 필요 없습니다(Oracle도 Thin 모드).
 
 ## 자동 업데이트
@@ -70,17 +66,17 @@ QueryBase는 독점 소프트웨어입니다. 함께 배포하는 오픈 소스 
 
 ## English
 
-QueryBase is a desktop database client for macOS, Windows and Linux. This repository holds no source code; installers and release notes are published as [Releases](https://github.com/paldyn/QueryBase-releases/releases).
+QueryBase is a desktop database client for macOS and Windows; Linux follows in a later version. This repository holds no source code; installers and release notes are published as [Releases](https://github.com/paldyn/QueryBase-releases/releases).
 
 ### Download
 
-The links in the [download table](#다운로드) above always serve the newest version: `QueryBase-mac-arm64.dmg` (Apple silicon), `QueryBase-mac-x64.dmg` (Intel), `QueryBase-win-x64.exe`, `QueryBase-win-arm64.exe`, `QueryBase-linux-x86_64.AppImage` and `QueryBase-linux-arm64.AppImage`. Older versions and release notes are on the [Releases](https://github.com/paldyn/QueryBase-releases/releases) page.
+The links in the [download table](#다운로드) above always serve the newest version: `QueryBase-mac-arm64.dmg` (Apple silicon), `QueryBase-mac-x64.dmg` (Intel), `QueryBase-win-x64.exe` and `QueryBase-win-arm64.exe`. Older versions and release notes are on the [Releases](https://github.com/paldyn/QueryBase-releases/releases) page.
 
 The Windows installers are not Authenticode code-signed. On first run, Microsoft Defender SmartScreen shows **Windows protected your PC**; choose **More info → Run anyway** to start the installer. An all-users installation shows an unknown publisher in the User Account Control prompt. With Smart App Control on, Windows 11 can block it without that choice.
 
 ### Requirements
 
-macOS 13 or later; Windows 10 or later (x64, arm64); Linux x64 or arm64 (static AppImage runtime, no `libfuse2`; use `APPIMAGE_EXTRACT_AND_RUN=1` without FUSE). No separate database client is needed.
+macOS 13 or later; Windows 10 or later (x64, arm64). No separate database client is needed.
 
 ### Updates
 
