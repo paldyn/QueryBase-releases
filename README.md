@@ -1,5 +1,7 @@
 # QueryBase
 
+**Beta** · 1.0.0 이전 버전은 베타입니다.
+
 macOS·Windows용 데스크톱 데이터베이스 클라이언트입니다. Linux용은 이후 버전에서 제공합니다. 이 저장소에는 소스 코드가 없고, 설치 파일과 릴리스 노트만 [Releases](https://github.com/paldyn/QueryBase-releases/releases)로 배포합니다.
 
 [English](#english)
@@ -66,6 +68,8 @@ QueryBase는 개인과 업무 용도 모두 무료로 쓸 수 있습니다. 설�
 QueryBase는 독점 소프트웨어입니다. 함께 배포하는 오픈 소스 구성 요소의 고지는 앱의 **도움말 → 오픈 소스 라이선스…**에서 볼 수 있습니다.
 
 ## English
+
+**Beta** · Versions before 1.0.0 are beta releases.
 
 QueryBase is a desktop database client for macOS and Windows; Linux follows in a later version. This repository holds no source code; installers and release notes are published as [Releases](https://github.com/paldyn/QueryBase-releases/releases).
 
