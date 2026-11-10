@@ -29,7 +29,7 @@ macOS·Windows용 데스크톱 데이터베이스 클라이언트입니다. Linu
 ## 자동 업데이트
 
 - 설치한 앱은 시작 30초 뒤와 24시간마다, 또는 **도움말 → 업데이트 확인…**에서 새 버전을 확인합니다.
-- 새 버전을 찾으면 묻지 않고 백그라운드에서 내려받습니다. 준비가 끝나면 상단 막대에 **업데이트** 버튼이 나타납니다.
+- 새 버전을 찾으면 묻지 않고 백그라운드에서 내려받습니다. 준비가 끝나면 하단 상태 표시줄의 버전 옆에 **업데이트** 버튼이 나타납니다.
 - 설치는 그 버튼이나 **다시 시작하고 설치**를 누를 때만 합니다. 다시 시작하기 전에 저장하지 않은 SQL과 커밋하지 않은 트랜잭션을 확인하며, 누르지 않으면 앱을 종료해도 설치되지 않습니다.
 - 안정 버전만 받고, 이전 버전으로 되돌리지 않습니다.
 - 모든 업데이트는 앱에 들어 있는 공개 키로 Ed25519 서명과 파일의 SHA-512 체크섬을 검증하고, macOS에서는 운영체제 코드 서명으로 한 번 더 검증합니다.
@@ -81,7 +81,7 @@ macOS 13 or later; Windows 10 or later (x64, arm64). No separate database client
 
 ### Updates
 
-QueryBase checks 30 seconds after it starts, every 24 hours and from **Help → Check for Updates…**. It downloads a new version in the background without asking and shows an **Update** button in the top bar when the update is ready. It installs only when you click that button or **Restart and install**, after checking unsaved SQL and open transactions; quitting does not install. It installs stable versions only and never downgrades. Each update is verified against the Ed25519 public key built into the app and its SHA-512 checksum, and on macOS also by the operating system's code signature. The app contacts only github.com and GitHub's release download servers and sends no persistent identifier (GitHub sees the IP address and app version). It follows the system proxy settings.
+QueryBase checks 30 seconds after it starts, every 24 hours and from **Help → Check for Updates…**. It downloads a new version in the background without asking and shows an **Update** button in the status bar, next to the version, when the update is ready. It installs only when you click that button or **Restart and install**, after checking unsaved SQL and open transactions; quitting does not install. It installs stable versions only and never downgrades. Each update is verified against the Ed25519 public key built into the app and its SHA-512 checksum, and on macOS also by the operating system's code signature. The app contacts only github.com and GitHub's release download servers and sends no persistent identifier (GitHub sees the IP address and app version). It follows the system proxy settings.
 
 ### Bug reports
 
