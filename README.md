@@ -1,6 +1,6 @@
 # QueryBase
 
-macOS·Windows용 데스크톱 데이터베이스 클라이언트입니다. Linux용은 다음 버전부터 제공합니다. 이 저장소에는 소스 코드가 없고, 설치 파일과 릴리스 노트만 [Releases](https://github.com/paldyn/QueryBase-releases/releases)로 배포합니다.
+macOS·Windows용 데스크톱 데이터베이스 클라이언트입니다. Linux용은 이후 버전에서 제공합니다. 이 저장소에는 소스 코드가 없고, 설치 파일과 릴리스 노트만 [Releases](https://github.com/paldyn/QueryBase-releases/releases)로 배포합니다.
 
 [English](#english)
 
